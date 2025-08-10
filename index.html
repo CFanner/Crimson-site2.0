@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crimson Advertising</title>
+  <meta name="description" content="Digital graphics for social media and print-ready artwork. Pietermaritzburg-friendly pricing. Payment up-front. Digital files only." />
+
+  <!-- Tailwind via CDN (no build needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Simple brand helpers -->
+  <style>
+    :root{
+      --brand-400:#a77a7c; /* tweak later to exact brand */
+      --brand-600:#5f2a2d;
+      --brand-700:#4a1d1f;
+      --brand-800:#351417;
+    }
+    .text-brand-400{ color: var(--brand-400); }
+    .bg-brand-600{ background-color: var(--brand-600); }
+    .bg-brand-700{ background-color: var(--brand-700); }
+    .bg-brand-800{ background-color: var(--brand-800); }
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-neutral-200">
+    <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <!-- Replace with your actual logo file: /logo.png or /logo.svg in the same folder -->
+        <img src="./logo.png" alt="Crimson Advertising" class="h-9 w-9 rounded-xl bg-neutral-900 object-contain p-1" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='grid';" />
+        <div id="logo-fallback" class="h-9 w-9 rounded-xl bg-gradient-to-br from-[var(--brand-600)] to-[var(--brand-800)] shadow-md place-items-center hidden">
+          <div class="h-4 w-4 border-2 border-white"></div>
+        </div>
+        <span class="font-semibold text-lg">Crimson Advertising</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#services" class="text-sm text-neutral-600 hover:text-neutral-900">Services</a>
+        <a href="#work" class="text-sm text-neutral-600 hover:text-neutral-900">Work</a>
+        <a href="#pricing" class="text-sm text-neutral-600 hover:text-neutral-900">Pricing</a>
+        <a href="#process" class="text-sm text-neutral-600 hover:text-neutral-900">Process</a>
+        <a href="#policies" class="text-sm text-neutral-600 hover:text-neutral-900">Policies</a>
+        <a href="#contact" class="rounded-xl border border-neutral-300 px-4 py-2 text-sm hover:bg-neutral-100">Contact</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-lg bg-neutral-900 text-white">
+        <span class="sr-only">Menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <path fill-rule="evenodd" d="M3.75 6.75A.75.75 0 0 1 4.5 6h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75Zm0 5.25a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 0 1.5h-15a.75.75 0 0 1-.75-.75Zm.75 4.5a.75.75 0 0 0 0 1.5h15a.75.75 0 0 0 0-1.5h-15Z" clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-neutral-200 bg-neutral-900 text-white">
+      <div class="px-6 py-4 space-y-4">
+        <a href="#services" class="block">Services</a>
+        <a href="#work" class="block">Work</a>
+        <a href="#pricing" class="block">Pricing</a>
+        <a href="#process" class="block">Process</a>
+        <a href="#policies" class="block">Policies</a>
+        <a href="#contact" class="block">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative pt-20 md:pt-24 pb-16 md:pb-24 overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_50%_40%,rgba(95,42,45,0.15),transparent_70%)]"></div>
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <span class="inline-flex items-center rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs">Digital graphics only</span>
+          <span class="inline-flex items-center rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs">Payment up-front</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-semibold leading-tight">Minimal, classy visuals that actually sell.</h1>
+        <p class="mt-4 text-neutral-700 text-lg">High‑impact digital designs for campaigns, launches and everyday posts. Use them on social or send to your printer. Fast, on‑brand, and affordable for Pietermaritzburg.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-5 py-3 font-medium hover:bg-brand-700 active:bg-brand-800">Start a project</a>
+          <a href="#work" class="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 font-medium hover:bg-neutral-100">See examples</a>
+        </div>
+        <div class="mt-6 flex items-center gap-6 text-sm text-neutral-600">
+          <div class="flex items-center gap-2"><span class="inline-block h-4 w-4 bg-brand-600"></span> Friendly pricing</div>
+          <div class="flex items-center gap-2"><span class="inline-block h-4 w-4 bg-brand-600"></span> Quick turnarounds</div>
+          <div class="flex items-center gap-2"><span class="inline-block h-4 w-4 bg-brand-600"></span> Reasonable edits</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] w-full rounded-2xl bg-gradient-to-br from-neutral-900 to-neutral-800 p-1 shadow-xl">
+          <div class="h-full w-full rounded-2xl bg-[conic-gradient(at_70%_30%,#4a1d1f_0deg,#a77a7c_120deg,#f5e6bf_200deg,#4a1d1f_360deg)]"></div>
+        </div>
+        <p class="text-xs text-neutral-500 mt-2 text-center">Portfolio previews coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="scroll-mt-24 py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-6">
+      <p class="text-brand-400 uppercase tracking-widest text-xs font-semibold mb-2">What I do</p>
+      <h2 class="text-3xl md:text-4xl font-semibold">Services</h2>
+      <ul class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Social Media Graphics</h3><p class="mt-2 text-neutral-700">Posts, carousels, covers and story assets for Instagram, Facebook, LinkedIn, TikTok.</p></li>
+        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Campaign & Launch Kits</h3><p class="mt-2 text-neutral-700">Cohesive sets with headers, ads, countdowns and promo tiles.</p></li>
+        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Print‑ready Artwork</h3><p class="mt-2 text-neutral-700">Flyers, business cards, banners and posters supplied as print‑ready PDFs (you arrange the printing).</p></li>
+        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Brand Basics</h3><p class="mt-2 text-neutral-700">Mini‑style guides, colour palettes and post templates to keep things consistent.</p></li>
+        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Content Clean‑ups</h3><p class="mt-2 text-neutral-700">Retouching, resizing, sharpening and text‑polish to make existing assets pop.</p></li>
+        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Rush Jobs</h3><p class="mt-2 text-neutral-700">If schedule allows, I’ll prioritise it (rush fee applies).</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="scroll-mt-24 py-16 md:py-24 bg-white">
+    <div class="mx-auto max-w-6xl px-6">
+      <p class="text-brand-400 uppercase tracking-widest text-xs font-semibold mb-2">Transparent & fair</p>
+      <h2 class="text-3xl md:text-4xl font-semibold">Pricing (From)</h2>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-neutral-200 bg-white/80 shadow-sm p-6">
+          <h3 class="text-xl font-semibold">Social Media</h3>
+          <ul class="mt-4 space-y-2 text-neutral-700">
+            <li>Posts – <strong>From R80</strong></li>
+            <li>Videos – <strong>From R140</strong></li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 font-medium hover:bg-brand-700">Request social quote</a>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-200 bg-white/80 shadow-sm p-6">
+          <h3 class="text-xl font-semibold">Business Starter</h3>
+          <ul class="mt-4 space-y-2 text-neutral-700">
+            <li>Logo Design – <strong>From R350</strong></li>
+            <li>Business Cards – <strong>From R270</strong></li>
+            <li>Trifold Brochure – <strong>From R350</strong></li>
+            <li>A5 Flyer/Brochure – <strong>From R180</strong></li>
+            <li>Banner – <strong>From R200</strong></li>
+            <li>Posters – <strong>From R120</strong></li>
+            <li>Reusable Invoice Template – <strong>From R250</strong></li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 font-medium hover:bg-brand-700">Enquire now</a>
+        </div>
+
+        <div class="rounded-2xl border border-neutral-200 bg-white/80 shadow-sm p-6">
+          <h3 class="text-xl font-semibold">Custom Design</h3>
+          <ul class="mt-4 space-y-2 text-neutral-700">
+            <li>Invitations – <strong>From R180</strong></li>
+            <li>Stickers (x3) – <strong>From R50</strong></li>
+            <li>Labels – <strong>From R80</strong></li>
+            <li>Mug Designs – <strong>From R60</strong></li>
+            <li>Custom T‑shirt Design – <strong>From R120</strong></li>
+            <li>Custom Calendars – <strong>From R400</strong></li>
+            <li>Occasion Cards – <strong>From R120</strong></li>
+          </ul>
+          <a href="#contact" class="mt-6 inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 font-medium hover:bg-brand-700">Get a custom quote</a>
+        </div>
+      </div>
+
+      <div class="mt-10 rounded-2xl border border-neutral-200 bg-white p-6">
+        <h3 class="text-xl font-semibold">Bundle Deals</h3>
+        <ul class="mt-4 grid md:grid-cols-3 gap-4 text-neutral-700">
+          <li class="rounded-xl border border-neutral-200 p-4">
+            <div class="font-medium">Starter Kit</div>
+            <div class="text-sm">Logo + Business Card + A5 Flyer</div>
+            <div class="mt-1 font-semibold">From R700 <span class="text-xs text-neutral-500">(save ±R100)</span></div>
+          </li>
+          <li class="rounded-xl border border-neutral-200 p-4">
+            <div class="font-medium">Social Media Boost</div>
+            <div class="text-sm">10 Posts + 5 Story Graphics</div>
+            <div class="mt-1 font-semibold">From R850</div>
+          </li>
+          <li class="rounded-xl border border-neutral-200 p-4">
+            <div class="font-medium">Event Pack</div>
+            <div class="text-sm">Invitation + Poster + 2 Social Media Posts</div>
+            <div class="mt-1 font-semibold">From R350</div>
+          </li>
+        </ul>
+        <p class="mt-4 text-sm text-neutral-600">Prices are per design unless otherwise stated. Payment up‑front. Extra edits beyond included rounds are billed at a small, reasonable rate.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="scroll-mt-24 py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-6">
+      <p class="text-brand-400 uppercase tracking-widest text-xs font-semibold mb-2">Simple, no faff</p>
+      <h2 class="text-3xl md:text-4xl font-semibold">How it works</h2>
+      <ol class="mt-6 grid md:grid-cols-2 gap-6 list-decimal list-inside">
+        <li><span class="font-semibold">Brief:</span> Send goals, copy, sizes and any brand assets.</li>
+        <li><span class="font-semibold">Invoice & Payment:</span> Payment up‑front. No payment, no product.</li>
+        <li><span class="font-semibold">Design:</span> Initial concepts sent as previews.</li>
+        <li><span class="font-semibold">Edits:</span> 1–2 included rounds depending on package. Extra edits billed per edit.</li>
+        <li><span class="font-semibold">Delivery:</span> Final files supplied as PNG/JPG and print‑ready PDF if required. (Digital only – you arrange printing.)</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Policies -->
+  <section id="policies" class="scroll-mt-24 py-16 md:py-24 bg-white">
+    <div class="mx-auto max-w-6xl px-6">
+      <p class="text-brand-400 uppercase tracking-widest text-xs font-semibold mb-2">Clear & respectful</p>
+      <h2 class="text-3xl md:text-4xl font-semibold">Policies</h2>
+      <ul class="mt-6 space-y-3">
+        <li class="flex gap-2 items-start"><span class="inline-block h-5 w-5 bg-brand-600 mt-0.5"></span> Payment up‑front. No payment, no product.</li>
+        <li class="flex gap-2 items-start"><span class="inline-block h-5 w-5 bg-brand-600 mt-0.5"></span> Digital files only – no physical printing handled.</li>
+        <li class="flex gap-2 items-start"><span class="inline-block h-5 w-5 bg-brand-600 mt-0.5"></span> Extra edits after included rounds billed at a small, reasonable rate.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="scroll-mt-24 py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-5 gap-6">
+      <div class="md:col-span-3">
+        <h2 class="text-3xl md:text-4xl font-semibold">Let’s talk</h2>
+        <p class="mt-2 text-neutral-700">Start your brief and I’ll confirm timing and a quote.</p>
+        <form class="mt-6 space-y-4" onsubmit="event.preventDefault(); const d=new FormData(this); const name=d.get('name'); const email=d.get('email'); const msg=d.get('message'); const subject=encodeURIComponent('New project enquiry – Crimson Advertising'); const body=encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${msg}`); location.href=`mailto:crimsonadvertsocialmedia@gmail.com?subject=${subject}&body=${body}`;">
+          <input name="name" required placeholder="Your name" class="w-full rounded-xl border border-neutral-300 px-4 py-3" />
+          <input type="email" name="email" required placeholder="Your email" class="w-full rounded-xl border border-neutral-300 px-4 py-3" />
+          <textarea name="message" required placeholder="Tell me what you need (sizes, platforms, deadlines)" class="w-full h-32 rounded-xl border border-neutral-300 px-4 py-3"></textarea>
+          <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-5 py-3 font-medium hover:bg-brand-700">Send enquiry</button>
+        </form>
+      </div>
+      <div class="md:col-span-2 space-y-4 text-neutral-700">
+        <div class="rounded-2xl border border-neutral-200 p-4">
+          <h3 class="font-semibold">Prefer WhatsApp?</h3>
+          <p class="text-sm mt-1">Tap below to start a chat. Share your brief and I’ll confirm timing and a quote.</p>
+          <a href="https://wa.me/27643473623?text=Hi%20Crimson%20Advertising%2C%20I%E2%80%99d%20like%20a%20quote%20please." class="mt-3 inline-flex items-center justify-center rounded-xl bg-green-600 text-white px-4 py-2 font-medium hover:bg-green-700">Message on WhatsApp</a>
+        </div>
+        <div class="rounded-2xl border border-neutral-200 p-4">
+          <h3 class="font-semibold">Email</h3>
+          <p class="text-sm mt-1">crimsonadvertsocialmedia@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-neutral-200 py-10">
+    <div class="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-600">
+      <p>© <span id="year"></span> Crimson Advertising. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="#" class="hover:underline">Instagram</a>
+        <a href="#" class="hover:underline">Facebook</a>
+        <a href="#" class="hover:underline">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn) menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Simple self-checks (so we “test” a few basics)
+    (function () {
+      const email = 'crimsonadvertsocialmedia@gmail.com';
+      const whatsapp = '27643473623';
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) console.warn('Email looks wrong');
+      if (!/^\d{11}$/.test(whatsapp)) console.warn('WhatsApp number should be 11 digits (country code + number)');
+    })();
+  </script>
+</body>
+</html>
