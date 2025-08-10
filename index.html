@@ -3,41 +3,48 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Crimson Advertising</title>
-  <meta name="description" content="Digital graphics for social media and print-ready artwork. Pietermaritzburg-friendly pricing. Payment up-front. Digital files only." />
-
-  <!-- Tailwind via CDN (no build needed) -->
+  <title>Crimson Advertising — Digital Graphics</title>
+  <meta name="description" content="Crimson Advertising creates digital graphics for social media and print‑ready artwork. PMB‑friendly pricing. Payment up‑front. Digital files only." />
+  <meta name="keywords" content="business,socialmedia,boost,boostingonlinepresence,onlinepresence,digitalmarketing,marketing,digitalpresence,Crimson Advertising, Pietermaritzburg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Simple brand helpers -->
   <style>
     :root{
-      --brand-400:#a77a7c; /* tweak later to exact brand */
-      --brand-600:#5f2a2d;
-      --brand-700:#4a1d1f;
-      --brand-800:#351417;
+      --wine-900:#400a0a;
+      --wine-800:#99192c;
+      --wine-700:#9b0c0c;
+      --wine-600:#b41e1e;
+      --wine-500:#a61414;
+      --wine-100:#fff;
     }
-    .text-brand-400{ color: var(--brand-400); }
-    .bg-brand-600{ background-color: var(--brand-600); }
-    .bg-brand-700{ background-color: var(--brand-700); }
-    .bg-brand-800{ background-color: var(--brand-800); }
+    html,body{ font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji','Segoe UI Emoji', sans-serif; }
+    .text-wine-600{ color: var(--wine-600); }
+    .bg-wine-900{ background-color: var(--wine-900); }
+    .bg-wine-800{ background-color: var(--wine-800); }
+    .bg-wine-700{ background-color: var(--wine-700); }
+    .bg-wine-600{ background-color: var(--wine-600); }
+    .ring-wine-700{ --tw-ring-color: var(--wine-700); }
+    .gradient-hero{ background: radial-gradient(60% 55% at 50% 30%, rgba(155,12,12,.22), transparent 70%), conic-gradient(from 210deg at 70% 30%, rgba(153,25,44,.15), rgba(64,10,10,.12), rgba(180,30,30,.14), transparent 280deg); }
+    .card{ border:1px solid rgb(226, 232, 240); border-radius: 16px; background: white; box-shadow: 0 6px 22px rgba(20,20,20,.06); }
+    .chip{ display:inline-flex; align-items:center; gap:.5rem; border-radius:999px; border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.15); color:white; padding:.4rem .8rem; font-size:.72rem; backdrop-filter: blur(6px); }
+    @keyframes floaty { 0%{ transform: translateY(0) } 50%{ transform: translateY(-8px) } 100%{ transform: translateY(0) } }
+    .floaty{ animation: floaty 6s ease-in-out infinite; }
   </style>
 </head>
 <body class="bg-neutral-50 text-neutral-900">
-  <!-- Header -->
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-neutral-200">
     <div class="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-3">
-        <!-- Replace with your actual logo file: /logo.png or /logo.svg in the same folder -->
-        <img src="./logo.png" alt="Crimson Advertising" class="h-9 w-9 rounded-xl bg-neutral-900 object-contain p-1" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='grid';" />
-        <div id="logo-fallback" class="h-9 w-9 rounded-xl bg-gradient-to-br from-[var(--brand-600)] to-[var(--brand-800)] shadow-md place-items-center hidden">
-          <div class="h-4 w-4 border-2 border-white"></div>
+        <div class="h-10 w-10 rounded-xl bg-wine-900 grid place-items-center ring-1 ring-white/40">
+          <img src="./logo.png" alt="Crimson Advertising" class="h-7 w-7 object-contain" onerror="this.style.display='none'">
         </div>
         <span class="font-semibold text-lg">Crimson Advertising</span>
       </a>
       <nav class="hidden md:flex items-center gap-6">
         <a href="#services" class="text-sm text-neutral-600 hover:text-neutral-900">Services</a>
-        <a href="#work" class="text-sm text-neutral-600 hover:text-neutral-900">Work</a>
+        <a href="#work" class="text-sm text-neutral-600 hover:text-neutral-900">Portfolio</a>
         <a href="#pricing" class="text-sm text-neutral-600 hover:text-neutral-900">Pricing</a>
         <a href="#process" class="text-sm text-neutral-600 hover:text-neutral-900">Process</a>
         <a href="#policies" class="text-sm text-neutral-600 hover:text-neutral-900">Policies</a>
@@ -53,7 +60,7 @@
     <div id="mobileMenu" class="hidden md:hidden border-t border-neutral-200 bg-neutral-900 text-white">
       <div class="px-6 py-4 space-y-4">
         <a href="#services" class="block">Services</a>
-        <a href="#work" class="block">Work</a>
+        <a href="#work" class="block">Portfolio</a>
         <a href="#pricing" class="block">Pricing</a>
         <a href="#process" class="block">Process</a>
         <a href="#policies" class="block">Policies</a>
@@ -62,98 +69,136 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="relative pt-20 md:pt-24 pb-16 md:pb-24 overflow-hidden">
-    <div class="absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_50%_40%,rgba(95,42,45,0.15),transparent_70%)]"></div>
-    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-10 items-center">
+  <section id="home" class="relative pt-20 md:pt-24 pb-16 md:pb-24 overflow-hidden gradient-hero">
+    <div class="absolute -top-8 -right-8 h-40 w-40 rounded-full bg-wine-700/20 blur-2xl floaty"></div>
+    <div class="absolute -bottom-10 -left-8 h-52 w-52 rounded-full bg-wine-600/20 blur-2xl floaty" style="animation-delay:1.2s"></div>
+
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-10 items-center relative">
       <div>
         <div class="flex items-center gap-2 mb-4">
-          <span class="inline-flex items-center rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs">Digital graphics only</span>
-          <span class="inline-flex items-center rounded-full border border-neutral-300 bg-white px-3 py-1 text-xs">Payment up-front</span>
+          <span class="chip">Digital graphics only</span>
+          <span class="chip">Payment up-front</span>
         </div>
         <h1 class="text-4xl md:text-6xl font-semibold leading-tight">Minimal, classy visuals that actually sell.</h1>
-        <p class="mt-4 text-neutral-700 text-lg">High‑impact digital designs for campaigns, launches and everyday posts. Use them on social or send to your printer. Fast, on‑brand, and affordable for Pietermaritzburg.</p>
+        <p class="mt-4 text-neutral-700 text-lg">High‑impact digital designs for campaigns, launches and everyday posts. Use them on social or send to your printer. PMB‑friendly pricing.</p>
         <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-5 py-3 font-medium hover:bg-brand-700 active:bg-brand-800">Start a project</a>
-          <a href="#work" class="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 font-medium hover:bg-neutral-100">See examples</a>
+          <a href="#contact" class="inline-flex items-center justify-center rounded-xl bg-wine-700 text-white px-5 py-3 font-medium hover:bg-wine-800">Start a project</a>
+          <a href="#work" class="inline-flex items-center justify-center rounded-xl border border-neutral-300 px-5 py-3 font-medium hover:bg-neutral-100">See portfolio</a>
         </div>
-        <div class="mt-6 flex items-center gap-6 text-sm text-neutral-600">
-          <div class="flex items-center gap-2"><span class="inline-block h-4 w-4 bg-brand-600"></span> Friendly pricing</div>
-          <div class="flex items-center gap-2"><span class="inline-block h-4 w-4 bg-brand-600"></span> Quick turnarounds</div>
-          <div class="flex items-center gap-2"><span class="inline-block h-4 w-4 bg-brand-600"></span> Reasonable edits</div>
+        <div class="mt-6 flex items-center gap-6 text-sm text-neutral-700">
+          <div class="flex items-center gap-2"><span class="inline-block h-4 w-4 bg-wine-700"></span> Friendly pricing</div>
+          <div class="flex items-center gap-2"><span class="inline-block h-4 w-4 bg-wine-700"></span> Quick turnarounds</div>
+          <div class="flex items-center gap-2"><span class="inline-block h-4 w-4 bg-wine-700"></span> Reasonable edits</div>
         </div>
       </div>
       <div class="relative">
-        <div class="aspect-[4/3] w-full rounded-2xl bg-gradient-to-br from-neutral-900 to-neutral-800 p-1 shadow-xl">
-          <div class="h-full w-full rounded-2xl bg-[conic-gradient(at_70%_30%,#4a1d1f_0deg,#a77a7c_120deg,#f5e6bf_200deg,#4a1d1f_360deg)]"></div>
+        <div class="aspect-[4/3] w-full rounded-2xl bg-gradient-to-br from-neutral-900 to-neutral-800 p-1 shadow-xl ring-1 ring-black/10">
+          <div class="h-full w-full rounded-2xl bg-[conic-gradient(at_70%_30%,#400a0a_0deg,#99192c_120deg,#b41e1e_200deg,#9b0c0c_320deg,#400a0a_360deg)]"></div>
         </div>
-        <p class="text-xs text-neutral-500 mt-2 text-center">Portfolio previews coming soon.</p>
+        <p class="text-xs text-neutral-600 mt-2 text-center">Portfolio previews coming soon.</p>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="scroll-mt-24 py-16 md:py-24">
+  <section class="py-12">
     <div class="mx-auto max-w-6xl px-6">
-      <p class="text-brand-400 uppercase tracking-widest text-xs font-semibold mb-2">What I do</p>
+      <h2 class="text-2xl md:text-3xl font-semibold">Why choose Crimson</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="card p-6"><h3 class="font-semibold">On‑brand every time</h3><p class="mt-2 text-neutral-700">Templates and style guides so your feed stays consistent.</p></div>
+        <div class="card p-6"><h3 class="font-semibold">Fast turnarounds</h3><p class="mt-2 text-neutral-700">Need it yesterday? I’ll prioritise if my schedule allows.</p></div>
+        <div class="card p-6"><h3 class="font-semibold">PMB‑friendly pricing</h3><p class="mt-2 text-neutral-700">Transparent “From” prices with bundle options.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="scroll-mt-24 py-16 md:py-24 bg-white">
+    <div class="mx-auto max-w-6xl px-6">
+      <p class="text-wine-600 uppercase tracking-widest text-xs font-semibold mb-2">What I do</p>
       <h2 class="text-3xl md:text-4xl font-semibold">Services</h2>
       <ul class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Social Media Graphics</h3><p class="mt-2 text-neutral-700">Posts, carousels, covers and story assets for Instagram, Facebook, LinkedIn, TikTok.</p></li>
-        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Campaign & Launch Kits</h3><p class="mt-2 text-neutral-700">Cohesive sets with headers, ads, countdowns and promo tiles.</p></li>
-        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Print‑ready Artwork</h3><p class="mt-2 text-neutral-700">Flyers, business cards, banners and posters supplied as print‑ready PDFs (you arrange the printing).</p></li>
-        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Brand Basics</h3><p class="mt-2 text-neutral-700">Mini‑style guides, colour palettes and post templates to keep things consistent.</p></li>
-        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Content Clean‑ups</h3><p class="mt-2 text-neutral-700">Retouching, resizing, sharpening and text‑polish to make existing assets pop.</p></li>
-        <li class="rounded-2xl border border-neutral-200 bg-white p-6"><h3 class="text-lg font-semibold">Rush Jobs</h3><p class="mt-2 text-neutral-700">If schedule allows, I’ll prioritise it (rush fee applies).</p></li>
+        <li class="card p-6"><h3 class="text-lg font-semibold">Social Media Graphics</h3><p class="mt-2 text-neutral-700">Posts, carousels, covers and story assets for Instagram, Facebook, LinkedIn, TikTok.</p></li>
+        <li class="card p-6"><h3 class="text-lg font-semibold">Campaign & Launch Kits</h3><p class="mt-2 text-neutral-700">Cohesive sets with headers, ads, countdowns and promo tiles.</p></li>
+        <li class="card p-6"><h3 class="text-lg font-semibold">Print‑ready Artwork</h3><p class="mt-2 text-neutral-700">Flyers, business cards, banners and posters supplied as print‑ready PDFs (you arrange the printing).</p></li>
+        <li class="card p-6"><h3 class="text-lg font-semibold">Brand Basics</h3><p class="mt-2 text-neutral-700">Mini‑style guides, colour palettes and post templates to keep things consistent.</p></li>
+        <li class="card p-6"><h3 class="text-lg font-semibold">Content Clean‑ups</h3><p class="mt-2 text-neutral-700">Retouching, resizing, sharpening and text‑polish to make existing assets pop.</p></li>
+        <li class="card p-6"><h3 class="text-lg font-semibold">Rush Jobs</h3><p class="mt-2 text-neutral-700">If schedule allows, I’ll prioritise it (rush fee applies).</p></li>
       </ul>
     </div>
   </section>
 
-  <!-- Pricing -->
+  <section id="work" class="py-16 md:py-24">
+    <div class="mx-auto max-w-6xl px-6">
+      <p class="text-wine-600 uppercase tracking-widest text-xs font-semibold mb-2">Portfolio</p>
+      <h2 class="text-3xl md:text-4xl font-semibold">Selected Work</h2>
+      <div class="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-200 relative ring-1 ring-black/5">
+          <img src="portfolio/1.png" alt="Project 1" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.style.background='conic-gradient(from 210deg,#400a0a,#99192c,#b41e1e,#9b0c0c)';">
+        </div>
+        <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-200 relative ring-1 ring-black/5">
+          <img src="portfolio/2.png" alt="Project 2" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.style.background='conic-gradient(from 210deg,#400a0a,#99192c,#b41e1e,#9b0c0c)';">
+        </div>
+        <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-200 relative ring-1 ring-black/5">
+          <img src="portfolio/3.png" alt="Project 3" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.style.background='conic-gradient(from 210deg,#400a0a,#99192c,#b41e1e,#9b0c0c)';">
+        </div>
+        <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-200 relative ring-1 ring-black/5">
+          <img src="portfolio/4.png" alt="Project 4" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.style.background='conic-gradient(from 210deg,#400a0a,#99192c,#b41e1e,#9b0c0c)';">
+        </div>
+        <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-200 relative ring-1 ring-black/5">
+          <img src="portfolio/5.png" alt="Project 5" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.style.background='conic-gradient(from 210deg,#400a0a,#99192c,#b41e1e,#9b0c0c)';">
+        </div>
+        <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-200 relative ring-1 ring-black/5">
+          <img src="portfolio/6.png" alt="Project 6" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.style.background='conic-gradient(from 210deg,#400a0a,#99192c,#b41e1e,#9b0c0c)';">
+        </div>
+      </div>
+      <p class="text-sm text-neutral-600 mt-4">To add work: in GitHub click <em>Add file → Upload files</em>, create a folder named <code>portfolio</code>, and drop PNGs (1.png, 2.png, …).</p>
+    </div>
+  </section>
+
   <section id="pricing" class="scroll-mt-24 py-16 md:py-24 bg-white">
     <div class="mx-auto max-w-6xl px-6">
-      <p class="text-brand-400 uppercase tracking-widest text-xs font-semibold mb-2">Transparent & fair</p>
+      <p class="text-wine-600 uppercase tracking-widest text-xs font-semibold mb-2">Transparent & fair</p>
       <h2 class="text-3xl md:text-4xl font-semibold">Pricing (From)</h2>
 
       <div class="mt-6 grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl border border-neutral-200 bg-white/80 shadow-sm p-6">
+        <div class="card p-6">
           <h3 class="text-xl font-semibold">Social Media</h3>
           <ul class="mt-4 space-y-2 text-neutral-700">
-            <li>Posts – <strong>From R80</strong></li>
-            <li>Videos – <strong>From R140</strong></li>
+            <li>Posts — <strong>From R80</strong></li>
+            <li>Videos — <strong>From R140</strong></li>
           </ul>
-          <a href="#contact" class="mt-6 inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 font-medium hover:bg-brand-700">Request social quote</a>
+          <a href="#contact" class="mt-6 inline-flex items-center justify-center rounded-xl bg-wine-700 text-white px-4 py-2 font-medium hover:bg-wine-800">Request social quote</a>
         </div>
 
-        <div class="rounded-2xl border border-neutral-200 bg-white/80 shadow-sm p-6">
+        <div class="card p-6">
           <h3 class="text-xl font-semibold">Business Starter</h3>
           <ul class="mt-4 space-y-2 text-neutral-700">
-            <li>Logo Design – <strong>From R350</strong></li>
-            <li>Business Cards – <strong>From R270</strong></li>
-            <li>Trifold Brochure – <strong>From R350</strong></li>
-            <li>A5 Flyer/Brochure – <strong>From R180</strong></li>
-            <li>Banner – <strong>From R200</strong></li>
-            <li>Posters – <strong>From R120</strong></li>
-            <li>Reusable Invoice Template – <strong>From R250</strong></li>
+            <li>Logo Design — <strong>From R350</strong></li>
+            <li>Business Cards — <strong>From R270</strong></li>
+            <li>Trifold Brochure — <strong>From R350</strong></li>
+            <li>A5 Flyer/Brochure — <strong>From R180</strong></li>
+            <li>Banner — <strong>From R200</strong></li>
+            <li>Posters — <strong>From R120</strong></li>
+            <li>Reusable Invoice Template — <strong>From R250</strong></li>
           </ul>
-          <a href="#contact" class="mt-6 inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 font-medium hover:bg-brand-700">Enquire now</a>
+          <a href="#contact" class="mt-6 inline-flex items-center justify-center rounded-xl bg-wine-700 text-white px-4 py-2 font-medium hover:bg-wine-800">Enquire now</a>
         </div>
 
-        <div class="rounded-2xl border border-neutral-200 bg-white/80 shadow-sm p-6">
+        <div class="card p-6">
           <h3 class="text-xl font-semibold">Custom Design</h3>
           <ul class="mt-4 space-y-2 text-neutral-700">
-            <li>Invitations – <strong>From R180</strong></li>
-            <li>Stickers (x3) – <strong>From R50</strong></li>
-            <li>Labels – <strong>From R80</strong></li>
-            <li>Mug Designs – <strong>From R60</strong></li>
-            <li>Custom T‑shirt Design – <strong>From R120</strong></li>
-            <li>Custom Calendars – <strong>From R400</strong></li>
-            <li>Occasion Cards – <strong>From R120</strong></li>
+            <li>Invitations — <strong>From R180</strong></li>
+            <li>Stickers (x3) — <strong>From R50</strong></li>
+            <li>Labels — <strong>From R80</strong></li>
+            <li>Mug Designs — <strong>From R60</strong></li>
+            <li>Custom T‑shirt Design — <strong>From R120</strong></li>
+            <li>Custom Calendars — <strong>From R400</strong></li>
+            <li>Occasion Cards — <strong>From R120</strong></li>
           </ul>
-          <a href="#contact" class="mt-6 inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-4 py-2 font-medium hover:bg-brand-700">Get a custom quote</a>
+          <a href="#contact" class="mt-6 inline-flex items-center justify-center rounded-xl bg-wine-700 text-white px-4 py-2 font-medium hover:bg-wine-800">Get a custom quote</a>
         </div>
       </div>
 
-      <div class="mt-10 rounded-2xl border border-neutral-200 bg-white p-6">
+      <div class="mt-10 card p-6">
         <h3 class="text-xl font-semibold">Bundle Deals</h3>
         <ul class="mt-4 grid md:grid-cols-3 gap-4 text-neutral-700">
           <li class="rounded-xl border border-neutral-200 p-4">
@@ -177,13 +222,12 @@
     </div>
   </section>
 
-  <!-- Process -->
   <section id="process" class="scroll-mt-24 py-16 md:py-24">
     <div class="mx-auto max-w-6xl px-6">
-      <p class="text-brand-400 uppercase tracking-widest text-xs font-semibold mb-2">Simple, no faff</p>
+      <p class="text-wine-600 uppercase tracking-widest text-xs font-semibold mb-2">Simple, no faff</p>
       <h2 class="text-3xl md:text-4xl font-semibold">How it works</h2>
       <ol class="mt-6 grid md:grid-cols-2 gap-6 list-decimal list-inside">
-        <li><span class="font-semibold">Brief:</span> Send goals, copy, sizes and any brand assets.</li>
+        <li><span class="font-semibold">Brief:</span> Send goals, copy, sizes and brand assets.</li>
         <li><span class="font-semibold">Invoice & Payment:</span> Payment up‑front. No payment, no product.</li>
         <li><span class="font-semibold">Design:</span> Initial concepts sent as previews.</li>
         <li><span class="font-semibold">Edits:</span> 1–2 included rounds depending on package. Extra edits billed per edit.</li>
@@ -192,39 +236,37 @@
     </div>
   </section>
 
-  <!-- Policies -->
   <section id="policies" class="scroll-mt-24 py-16 md:py-24 bg-white">
     <div class="mx-auto max-w-6xl px-6">
-      <p class="text-brand-400 uppercase tracking-widest text-xs font-semibold mb-2">Clear & respectful</p>
+      <p class="text-wine-600 uppercase tracking-widest text-xs font-semibold mb-2">Clear & respectful</p>
       <h2 class="text-3xl md:text-4xl font-semibold">Policies</h2>
       <ul class="mt-6 space-y-3">
-        <li class="flex gap-2 items-start"><span class="inline-block h-5 w-5 bg-brand-600 mt-0.5"></span> Payment up‑front. No payment, no product.</li>
-        <li class="flex gap-2 items-start"><span class="inline-block h-5 w-5 bg-brand-600 mt-0.5"></span> Digital files only – no physical printing handled.</li>
-        <li class="flex gap-2 items-start"><span class="inline-block h-5 w-5 bg-brand-600 mt-0.5"></span> Extra edits after included rounds billed at a small, reasonable rate.</li>
+        <li class="flex gap-2 items-start"><span class="inline-block h-5 w-5 bg-wine-700 mt-0.5"></span> Payment up‑front. No payment, no product.</li>
+        <li class="flex gap-2 items-start"><span class="inline-block h-5 w-5 bg-wine-700 mt-0.5"></span> Digital files only – no physical printing handled.</li>
+        <li class="flex gap-2 items-start"><span class="inline-block h-5 w-5 bg-wine-700 mt-0.5"></span> Extra edits after included rounds billed at a small, reasonable rate.</li>
       </ul>
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="scroll-mt-24 py-16 md:py-24">
     <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-5 gap-6">
       <div class="md:col-span-3">
         <h2 class="text-3xl md:text-4xl font-semibold">Let’s talk</h2>
         <p class="mt-2 text-neutral-700">Start your brief and I’ll confirm timing and a quote.</p>
         <form class="mt-6 space-y-4" onsubmit="event.preventDefault(); const d=new FormData(this); const name=d.get('name'); const email=d.get('email'); const msg=d.get('message'); const subject=encodeURIComponent('New project enquiry – Crimson Advertising'); const body=encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${msg}`); location.href=`mailto:crimsonadvertsocialmedia@gmail.com?subject=${subject}&body=${body}`;">
-          <input name="name" required placeholder="Your name" class="w-full rounded-xl border border-neutral-300 px-4 py-3" />
-          <input type="email" name="email" required placeholder="Your email" class="w-full rounded-xl border border-neutral-300 px-4 py-3" />
-          <textarea name="message" required placeholder="Tell me what you need (sizes, platforms, deadlines)" class="w-full h-32 rounded-xl border border-neutral-300 px-4 py-3"></textarea>
-          <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-brand-600 text-white px-5 py-3 font-medium hover:bg-brand-700">Send enquiry</button>
+          <input name="name" required placeholder="Your name" class="w-full rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 ring-wine-700" />
+          <input type="email" name="email" required placeholder="Your email" class="w-full rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 ring-wine-700" />
+          <textarea name="message" required placeholder="Tell me what you need (sizes, platforms, deadlines)" class="w-full h-32 rounded-xl border border-neutral-300 px-4 py-3 focus:outline-none focus:ring-2 ring-wine-700"></textarea>
+          <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-wine-700 text-white px-5 py-3 font-medium hover:bg-wine-800">Send enquiry</button>
         </form>
       </div>
       <div class="md:col-span-2 space-y-4 text-neutral-700">
-        <div class="rounded-2xl border border-neutral-200 p-4">
+        <div class="card p-4">
           <h3 class="font-semibold">Prefer WhatsApp?</h3>
           <p class="text-sm mt-1">Tap below to start a chat. Share your brief and I’ll confirm timing and a quote.</p>
           <a href="https://wa.me/27643473623?text=Hi%20Crimson%20Advertising%2C%20I%E2%80%99d%20like%20a%20quote%20please." class="mt-3 inline-flex items-center justify-center rounded-xl bg-green-600 text-white px-4 py-2 font-medium hover:bg-green-700">Message on WhatsApp</a>
         </div>
-        <div class="rounded-2xl border border-neutral-200 p-4">
+        <div class="card p-4">
           <h3 class="font-semibold">Email</h3>
           <p class="text-sm mt-1">crimsonadvertsocialmedia@gmail.com</p>
         </div>
@@ -232,34 +274,27 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="border-t border-neutral-200 py-10">
-    <div class="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-600">
+  <footer class="border-t border-neutral-200 py-10 bg-white">
+    <div class="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-700">
       <p>© <span id="year"></span> Crimson Advertising. All rights reserved.</p>
-      <div class="flex items-center gap-4">
-        <a href="#" class="hover:underline">Instagram</a>
-        <a href="#" class="hover:underline">Facebook</a>
-        <a href="#" class="hover:underline">LinkedIn</a>
+      <div class="flex items-center gap-2 flex-wrap">
+        <span class="px-2 py-1 rounded-full bg-neutral-100">#business</span>
+        <span class="px-2 py-1 rounded-full bg-neutral-100">#socialmedia</span>
+        <span class="px-2 py-1 rounded-full bg-neutral-100">#boost</span>
+        <span class="px-2 py-1 rounded-full bg-neutral-100">#boostingonlinepresence</span>
+        <span class="px-2 py-1 rounded-full bg-neutral-100">#onlinepresence</span>
+        <span class="px-2 py-1 rounded-full bg-neutral-100">#digitalmarketing</span>
+        <span class="px-2 py-1 rounded-full bg-neutral-100">#marketing</span>
+        <span class="px-2 py-1 rounded-full bg-neutral-100">#digitalpresence</span>
       </div>
     </div>
   </footer>
 
   <script>
-    // Mobile menu toggle
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
-    if (menuBtn) menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-    // Year
+    if (menuBtn) menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
     document.getElementById('year').textContent = new Date().getFullYear();
-    // Simple self-checks (so we “test” a few basics)
-    (function () {
-      const email = 'crimsonadvertsocialmedia@gmail.com';
-      const whatsapp = '27643473623';
-      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) console.warn('Email looks wrong');
-      if (!/^\d{11}$/.test(whatsapp)) console.warn('WhatsApp number should be 11 digits (country code + number)');
-    })();
   </script>
 </body>
 </html>
